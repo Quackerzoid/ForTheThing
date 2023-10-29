@@ -51,8 +51,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Knight",
+    "path": "folders/Sprites/Knight.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
