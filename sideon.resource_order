@@ -16,6 +16,9 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"Structs","order":1,"path":"folders/Scripts/Structs.yy",},
+    {"name":"Manager","order":1,"path":"folders/Objects/Manager.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"oRuntime","order":1,"path":"objects/oRuntime/oRuntime.yy",},
+  ],
 }
