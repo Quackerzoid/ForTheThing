@@ -40,6 +40,7 @@
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"oCharacter","path":"objects/oCharacter/oCharacter.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Note2","path":"notes/Note2/Note2.yy",},},
     {"id":{"name":"fntPixel","path":"fonts/fntPixel/fntPixel.yy",},},
     {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},},
     {"id":{"name":"stCharacter","path":"scripts/stCharacter/stCharacter.yy",},},

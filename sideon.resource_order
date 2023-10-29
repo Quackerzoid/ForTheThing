@@ -20,6 +20,7 @@
     {"name":"Entities","order":2,"path":"folders/Objects/Entities.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"Note2","order":1,"path":"notes/Note2/Note2.yy",},
     {"name":"oRuntime","order":1,"path":"objects/oRuntime/oRuntime.yy",},
   ],
 }
