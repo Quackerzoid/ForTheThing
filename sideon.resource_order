@@ -18,11 +18,18 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+<<<<<<< Updated upstream
     {"name":"Combat","order":2,"path":"folders/Scripts/Combat.yy",},
+=======
+>>>>>>> Stashed changes
   ],
   "ResourceOrderSettings": [
+    {"name":"sprKnightRun","order":3,"path":"sprites/sprKnightRun/sprKnightRun.yy",},
+    {"name":"sprKnightDeath","order":2,"path":"sprites/sprKnightDeath/sprKnightDeath.yy",},
+    {"name":"sprRogueIdle","order":1,"path":"sprites/sprRogueIdle/sprRogueIdle.yy",},
     {"name":"Note2","order":1,"path":"notes/Note2/Note2.yy",},
     {"name":"stWeapon","order":1,"path":"scripts/stWeapon/stWeapon.yy",},
     {"name":"oRuntime","order":1,"path":"objects/oRuntime/oRuntime.yy",},
+    {"name":"sprRogueDeath","order":4,"path":"sprites/sprRogueDeath/sprRogueDeath.yy",},
   ],
 }
