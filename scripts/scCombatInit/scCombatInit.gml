@@ -6,4 +6,6 @@ function scCombatInit(){
 		var currentChar = instance_create_depth(0,0,0,oCharacter)
 		currentChar.struct = party[i]
 	}
+	
+	
 }
