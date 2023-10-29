@@ -21,7 +21,7 @@ function scCombatInit(){
 		enemyActive[i] = currentChar
 	}
 	
-	currentScript = scCombatPlayerTurn
+	currentScript = scCombatPlayerTurnInit
 	instance_create_depth(0,0,0,oCamera)
 	oCamera.currentScript = scCameraBattleIdle
 }
