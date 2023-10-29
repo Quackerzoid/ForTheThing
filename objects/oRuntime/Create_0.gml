@@ -8,4 +8,4 @@ current_script = scCombatInit
 //make a test character
 var testchar = new stCharacter()
 
-party = []
+party = [testchar,testchar]
