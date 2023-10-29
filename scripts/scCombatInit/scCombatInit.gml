@@ -4,6 +4,8 @@ function scCombatInit(){
 	
 	room_goto(rBattle)
 	// PARTY SPAWNER
+	instance_create_depth(0,0,0,oCamera)
+	oCamera.currentScript = scCameraBattleIdle
 	for (var i = 0; i < array_length(party);i++) {
 		var currentChar = instance_create_depth(-TILE*4-TILE*4*i,0,0,oCharacter)
 		currentChar.struct = party[i]
@@ -13,15 +15,15 @@ function scCombatInit(){
 	}
 	
 	// ENEMY SPAWNER
-	var encounter = [new stCharacter(),new stCharacter(),new stCharacter()]
+	var encounter = [0,new stCharacter(),new stCharacter()]
 	for (var i = 0; i < array_length(encounter);i++) {
 		var currentChar = instance_create_depth(TILE*4+TILE*4*i,0,0,oCharacter)
-		currentChar.struct = encounter[i]
+		currentChar.struct = new stCharacter()
 		currentChar.sprite_index = currentChar.struct.sprite.idle
 		enemyActive[i] = currentChar
 	}
 	
 	currentScript = scCombatPlayerTurnInit
-	instance_create_depth(0,0,0,oCamera)
-	oCamera.currentScript = scCameraBattleIdle
+	enemyTarget = 0
+	playerTarget = 0
 }

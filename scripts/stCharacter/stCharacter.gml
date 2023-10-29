@@ -5,10 +5,11 @@ function stCharacter() constructor {
 	name = ""
 	weapon = new stSword()
 	sprite = new stSprite() 
-	hp = 0
-	str = 0
+	maxHp = 10
+	hp = 10
+	str = 5
 	mag = 0
-	def = 0
+	def = 1
 	res = 0
 	spd = 0
 	luck = 0

@@ -1,10 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function stUIBox() constructor{
-	x = 0
-	xTo = 0
-	name = ""
-	selected = 0
-	pos = 0
-	script = scCombatSelectTargetInit
+function scCombatPlayerAttackInit(){
+	currentStep = 0
+	currentScript = scCombatPlayerAttack
 }

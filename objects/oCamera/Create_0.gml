@@ -3,7 +3,7 @@
 y = 0
 x = 0
 RoomCamera = view_camera[0]
-DefaultViewWidth = 480
-DefaultViewHeight = 270
+DefaultViewWidth = camera_get_view_width(RoomCamera)
+DefaultViewHeight = camera_get_view_height(RoomCamera)
 ViewWidth = DefaultViewWidth
 ViewHeight = DefaultViewHeight

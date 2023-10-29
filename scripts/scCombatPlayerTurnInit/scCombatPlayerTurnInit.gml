@@ -4,12 +4,14 @@ function scCombatPlayerTurnInit(){
 	var UI = instance_create_depth(0,0,0,oCombatUISelect)
 	UI.boxes = [new stUIBox(),new stUIBox()]
 	for (var i = 0; i < array_length(UI.boxes);i++) {
-		UI.boxes[i].x = camera_get_view_width(oCamera.RoomCamera)/2 + (TILE*2+1)*i
+		UI.boxes[i].x = camera_get_view_width(oCamera.RoomCamera)/2 + (TILE+1)*i*cameraviewportscale
 		UI.boxes[i].xTo = UI.boxes[i].x
+		UI.boxes[i].pos = i
 	}
 	UI.boxes[0].selected = 1
 	UI.boxes[0].name = "Attack"
 	UI.boxes[1].name = "Block"
 	
 	currentScript = scCombatPlayerTurn
+	oCamera.currentScript = scCameraBattleIdle
 }
