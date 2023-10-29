@@ -25,7 +25,6 @@
     {"name":"Wizard","order":5,"path":"folders/Sprites/Wizard.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Character","order":1,"path":"folders/Scripts/Combat/Character.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprRogueDeath","order":1,"path":"sprites/sprRogueDeath/sprRogueDeath.yy",},
@@ -35,6 +34,7 @@
     {"name":"sprHands3","order":2,"path":"sprites/sprHands3/sprHands3.yy",},
     {"name":"Sprite12","order":2,"path":"sprites/Sprite12/Sprite12.yy",},
     {"name":"sprWizardDeath","order":1,"path":"sprites/sprWizardDeath/sprWizardDeath.yy",},
+    {"name":"fuck","order":2,"path":"notes/fuck/fuck.yy",},
     {"name":"sprSkeletonDeath","order":1,"path":"sprites/sprSkeletonDeath/sprSkeletonDeath.yy",},
     {"name":"stWeapon","order":1,"path":"scripts/stWeapon/stWeapon.yy",},
     {"name":"sprHands2","order":1,"path":"sprites/sprHands2/sprHands2.yy",},
