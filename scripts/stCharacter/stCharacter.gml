@@ -9,7 +9,7 @@ function stCharacter() constructor {
 	mag = 0
 	def = 0
 	res = 0
-	spe = 0
+	spd = 0
 	luck = 0
 	inventory = []
 	skills = []
