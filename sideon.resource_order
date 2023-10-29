@@ -5,6 +5,7 @@
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
+    {"name":"Entities","order":2,"path":"folders/Objects/Entities.yy",},
     {"name":"Manager","order":1,"path":"folders/Objects/Manager.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
@@ -17,10 +18,11 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Entities","order":2,"path":"folders/Objects/Entities.yy",},
+    {"name":"Combat","order":2,"path":"folders/Scripts/Combat.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Note2","order":1,"path":"notes/Note2/Note2.yy",},
+    {"name":"stWeapon","order":1,"path":"scripts/stWeapon/stWeapon.yy",},
     {"name":"oRuntime","order":1,"path":"objects/oRuntime/oRuntime.yy",},
   ],
 }

@@ -3,7 +3,7 @@
 //hi
 function stCharacter() constructor {
 	name = ""
-	weapon = undefined
+	weapon = new stSword()
 	sprite = undefined 
 	hp = 0
 	str = 0
