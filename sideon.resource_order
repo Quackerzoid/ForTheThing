@@ -9,20 +9,16 @@
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
-    {"name":"Structs","order":1,"path":"folders/Scripts/Structs.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-<<<<<<< HEAD
     {"name":"Structs","order":1,"path":"folders/Scripts/Structs.yy",},
     {"name":"Manager","order":1,"path":"folders/Objects/Manager.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oRuntime","order":1,"path":"objects/oRuntime/oRuntime.yy",},
-=======
->>>>>>> 292506705c968c9ed7ee4a06fb34415fb568666d
   ],
 }
