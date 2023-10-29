@@ -17,6 +17,7 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Entities","order":2,"path":"folders/Objects/Entities.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oRuntime","order":1,"path":"objects/oRuntime/oRuntime.yy",},
