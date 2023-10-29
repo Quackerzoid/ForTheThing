@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-current_script = scCombatInit
+currentScript = scCombatInit
+
 
 //all the 'global' variables we need
 
@@ -9,3 +10,5 @@ current_script = scCombatInit
 var testchar = new stCharacter()
 
 party = [testchar,testchar]
+partyActive = []
+enemyActive = []
