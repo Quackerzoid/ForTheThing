@@ -34,6 +34,7 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
+    {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"fntPixel","path":"fonts/fntPixel/fntPixel.yy",},},
     {"id":{"name":"sprKnight","path":"sprites/sprKnight/sprKnight.yy",},},
   ],
