@@ -11,8 +11,15 @@ function stCharacter() constructor {
 	mag = 0
 	def = 1
 	res = 0
-	spd = 0
+	spd = 2
 	luck = 0
 	inventory = []
 	skills = []
+}
+
+function stSkeletonEnemy() : stCharacter() constructor {
+	
+	sprite = new stSkeletonSprite()
+	str = 3
+	spd = 1
 }

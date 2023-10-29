@@ -10,13 +10,13 @@ function scCombatPlayerAttack(){
 		
 		case 1:
 			//damage and enemy takes hit
-			scDamage(partyActive[playerTarget],enemyActive[enemyTarget])
+			scDamage(turnOrder[0],enemyActive[enemyTarget])
 			
 			currentStep = 2
 		break;
 		
 		case 2: 
-			currentScript = scCombatPlayerTurnInit
+			scNextTurn()
 		break;
 	}
 	

@@ -4,3 +4,8 @@ function stSprite() constructor {
 	idle = sprKnightIdle
 	run = sprKnightRun
 }
+
+function stSkeletonSprite() : stSprite() constructor {
+	idle = sprSkeletonIdle
+	run = sprSkeletonDeath
+}
