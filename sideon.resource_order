@@ -16,8 +16,5 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [
-    {"name":"objPlayer","order":1,"path":"objects/objPlayer/objPlayer.yy",},
-    {"name":"objCombat","order":2,"path":"objects/objCombat/objCombat.yy",},
-  ],
+  "ResourceOrderSettings": [],
 }
