@@ -1,0 +1,7 @@
+draw_set_colour(c_white)
+draw_text(700,100,str_display)
+draw_text(700,150,spd_display)
+draw_text(700,200,mag_display)
+draw_text(700,250,def_display)
+draw_text(700,300,res_display)
+draw_text(700,350,luck_display)
