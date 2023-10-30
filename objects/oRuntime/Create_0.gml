@@ -7,8 +7,7 @@ currentScript = scCombatInit
 //all the 'global' variables we need
 
 //make a test character
-var testchar = new stCharacter()
 
-party = [testchar,testchar]
+party = [new stCharacter(),new stCharacter(),new stCharacter()]
 partyActive = []
 enemyActive = []

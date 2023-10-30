@@ -20,4 +20,5 @@ function scDeath(dead){
 	oCamera.currentScript = scCameraBattleIdle
 	array_delete(turnOrder,array_get_index(turnOrder,dead),1)
 	enemyTarget = 0
+	
 }

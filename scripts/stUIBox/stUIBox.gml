@@ -8,3 +8,13 @@ function stUIBox() constructor{
 	pos = 0
 	script = scCombatSelectTargetInit
 }
+
+function stUISkillBox() constructor{
+	name = ""
+	y = 0
+	yTo = 0
+	skill = undefined
+	selected = 0
+	pos = 0
+}
+

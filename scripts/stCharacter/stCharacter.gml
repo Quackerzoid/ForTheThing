@@ -14,7 +14,8 @@ function stCharacter() constructor {
 	spd = 2
 	luck = 0
 	inventory = []
-	skills = []
+	skills = [new stSkillDoubleEdgedAttack()]
+	xp = 0
 }
 
 function stSkeletonEnemy() : stCharacter() constructor {
@@ -22,4 +23,5 @@ function stSkeletonEnemy() : stCharacter() constructor {
 	sprite = new stSkeletonSprite()
 	str = 3
 	spd = 1
+	xp = 2
 }
