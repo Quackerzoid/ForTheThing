@@ -9,3 +9,8 @@ function stSkeletonSprite() : stSprite() constructor {
 	idle = sprSkeletonIdle
 	run = sprSkeletonDeath
 }
+
+function stWizardSprite() : stSprite() constructor {
+	idle = sprWizardIdle
+	run = sprWizardDeath
+}

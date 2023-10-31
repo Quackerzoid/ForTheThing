@@ -18,6 +18,23 @@ function stCharacter() constructor {
 	xp = 0
 }
 
+function stWizardTest() constructor {
+	name = ""
+	weapon = new stSword()
+	sprite = new stWizardSprite() 
+	maxHp = 10
+	hp = 10
+	str = 0
+	mag = 10
+	def = 1
+	res = 0
+	spd = 2
+	luck = 0
+	inventory = []
+	skills = []
+	xp = 0
+}
+
 function stSkeletonEnemy() : stCharacter() constructor {
 	
 	sprite = new stSkeletonSprite()

@@ -3,6 +3,7 @@
 function stSword() constructor {
 	attackScript = undefined
 	atk = 0
+	type = 0 //type 0 is phys and type 1 is magic
 	gemSlots = []
 	maxGemSlots = 1
 }
