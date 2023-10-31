@@ -1,64 +1,55 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function cellular_automata_map(_width, _height, _spawn_chance, _create_limit, _destroy_limit) constructor {
-	
-	//set variables
-	width = _width;
-	height = _height;
-	create_limit = _create_limit;
-	destroy_limit = _destroy_limit;
-	var map = []
+function scMapGenerate(density,generations) {
 
-	//create and randomize map
-	for (var col = width - 1; col >= 0; col -= 1) {
-		for (var row = height - 1; row >= 0; row -= 1) {
-			map[col][row] = random(1) <= _spawn_chance;
-		}
-	}
+	var grid = makeNoiseGrid(density)
+	oMap.map = apply_cellular_automaton(grid,generations)
+	show_debug_message(oMap.map)
+	show_debug_message("BIG FAT WILLY")
 	
-	//the iterate function
-	static iterate = function(_num) {
-		
-		repeat(_num) {
-			
-			//create a new map so as not to overwrite data while we're collecting it
-			var _new_map = [];
-			
-			//loop through old map, and create a new map with the next generation of cells
-			for (var col = 0; col < width; col += 1) {
-				for (var row = 0; row < height; row += 1) {
-					
-					//get a count of neighbors
-					var _col_dif, _row_dif, _count;
-					_count = 0;
-					for (var col_offset = -1; col_offset < 2; col_offset += 1) {
-						for (var row_offset = -1; row_offset < 2; row_offset += 1) {
-							_col_dif = col + col_offset;
-							_row_dif = row + row_offset;
-							if (_col_dif < 0) || (_row_dif < 0) || (_col_dif >= width) || (_row_dif >= height) {
-								_count += 1;
-							} else if (_col_dif == 0) && (_row_dif == 0) {
-								continue;
-							} else if (map[_col_dif][_row_dif]) {
-								_count += 1;
-							}
-						}
-					}					
-					
-					//apply rules for changing
-					if (map[col][row]) {
-						_new_map[col][row] = _count > destroy_limit;
-					} else {
-						_new_map[col][row] = _count > create_limit;
-					} 
-					
-				}
+}
+
+function makeNoiseGrid(density) {
+	var noise_grid = []
+	
+	for (var i = 0; i < oMap.wid; i++) {
+		for (var j = 0; j < oMap.hei; j++) {
+			var rand = irandom_range(1,100)
+			if (rand < density) {
+				noise_grid[i,j] = true	
+			} else {
+				noise_grid[i,j] = false	
 			}
 			
-			//replace the old map with the new map
-			map = _new_map;	
 		}
-	
 	}
-	return map
+	return noise_grid
 }
+
+function apply_cellular_automaton(grid,count) {
+	var positions = [[0,1],[0,-1],[1,0],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]]
+	for (var i = 0; i < count; i++) {
+		var temp_grid = grid
+		for (var j = 0; j < oMap.hei;j++) {
+			for (var k = 0; k < oMap.wid;k++) {
+				var neighbour_wall_count = 0
+				for (var pos = 0; pos < array_length(positions); pos ++) {
+					if (j + positions[pos,0] >= 0 and j + positions[pos,0] < oMap.hei  and k + positions[pos,1] >= 0 and k + positions[pos,1] < oMap.wid) {
+						if (temp_grid[j + positions[pos,0],k + positions[pos,1]] == false) {
+							neighbour_wall_count++
+						}
+					} else {
+						neighbour_wall_count++
+					}
+				}
+				if (neighbour_wall_count > 4) {
+					grid[j,k] = false
+				} else {
+					grid[j,k] = true
+				}
+			}
+		}
+	}
+	return grid
+}
+	
